@@ -1,0 +1,3 @@
+ul.nav.nav-tabs.nav-pills
+  li(ng-repeat='link in links',ng-class='{active: isActive("{{link.path}}")}')
+      a(ng-href='{{link.path}}') {{link.name}}

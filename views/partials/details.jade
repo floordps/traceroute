@@ -1,0 +1,24 @@
+include ../includes/_header.jade
+.panel.panel-default
+  .panel-heading 
+    h4 Traceroute Details
+  table.table
+    thead
+      tr
+        td #
+        td IP Address
+        td Round Trip Time
+        td Latitude
+        td Longitude
+    tr(ng-repeat="route in routes track by $index")
+      td(ng-if='route') {{$index + 1}}
+      td(ng-if='route') {{route.ip}}
+      td(ng-if='route') {{route.rtt}}
+      td(ng-if='route') {{route.latitude}}
+      td(ng-if='route') {{route.longitude}}
+      td(ng-if='!route') {{$index + 1}}
+      td(ng-if='!route') *
+      td(ng-if='!route') *
+      td(ng-if='!route') *
+      td(ng-if='!route') * 
+include ../includes/_footer.jade

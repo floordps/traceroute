@@ -1,0 +1,145 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #333;
+}
+
+div[ng-view], #tabs-wrap {
+  height: 100%;
+}
+
+#map_canvas {
+  height: 100%;
+}
+
+#tabs-wrap {
+  padding-top: 10px;
+  height: 100%;
+}
+
+.container-fluid {
+  height: 100%;
+  display: table;
+  width: 100%;
+  padding: 0;
+}
+
+.row-fluid {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.centering {
+  float: none;
+  margin: 0 auto;
+}
+
+option {
+  background-color: white;
+  color: black;
+}
+
+.panel {
+  height: 100%;
+}
+
+/*
+  Map
+*/
+
+.controls {
+  margin-top: 16px;
+  margin-left: 15%;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+}
+
+#pac-input {
+  font-family: Roboto;
+  font-size: 15px;
+  text-overflow: ellipsis;
+}
+
+/*
+  Meny
+*/
+.meny {
+  display: none;
+  padding: 20px;
+  overflow: auto;
+  background: #333;
+  color: #eee;
+
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+  .meny ul {
+    margin-top: 10px;
+  }
+    .meny ul li {
+      display: inline-block;
+      width: 100px;
+      list-style: none;
+      font-size: 20px;
+      padding: 3px 10px;
+    }
+      .meny ul li:before {
+        /*content: '-';*/
+        margin-right: 5px;
+        color: rgba( 255, 255, 255, 0.2 );
+      }
+
+.meny-arrow {
+  position: absolute;
+  z-index: 10;
+
+  border: 10px solid transparent;
+
+  -webkit-transition: opacity 0.4s ease 0.4s;
+     -moz-transition: opacity 0.4s ease 0.4s;
+      -ms-transition: opacity 0.4s ease 0.4s;
+       -o-transition: opacity 0.4s ease 0.4s;
+          transition: opacity 0.4s ease 0.4s;
+
+}
+  .meny-left .meny-arrow {
+    left: 14px;
+    top: 50%;
+    margin-top: -16px;
+    border-left: 16px solid grey;
+  }
+  .meny-active .meny-arrow {
+    opacity: 0;
+
+    -webkit-transition: opacity 0.2s ease;
+       -moz-transition: opacity 0.2s ease;
+        -ms-transition: opacity 0.2s ease;
+         -o-transition: opacity 0.2s ease;
+            transition: opacity 0.2s ease;
+  }
+
+/*
+  LOGO
+*/
+.logo {
+  opacity: 0.55;
+  width: 100%;
+  font-family: "Nunito", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 10vw;
+  top: 25%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  z-index: -1;
+}

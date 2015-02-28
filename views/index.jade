@@ -1,0 +1,39 @@
+doctype html
+html(ng-app='traceroute')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes')
+    title traceroute
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js")
+    script(src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.min.js")
+    script(src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular-route.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.0/ui-bootstrap-tpls.min.js")
+    script(src="https://maps.googleapis.com/maps/api/js")
+    script(src="/app/app.js")
+    script(src="/app/js/meny.js")
+    script(src="/app/services/service.js")
+    script(src="/app/controllers/controller.js")
+    script(src="/app/directives/map.js")
+    script(src="/app/directives/tabs.js")
+    script(src="/bower/ladda/dist/spin.min.js")
+    script(src="/bower/ladda/dist/ladda.min.js")
+    script(src="/bower/angular-ladda/dist/angular-ladda.min.js")
+    link(rel="stylesheet",href="/app/css/style.css")
+    link(rel="stylesheet",href="/bower/ladda/dist/ladda-themeless.min.css")
+    link(href="http://fonts.googleapis.com/css?family=Nunito", rel="stylesheet")
+  body
+    .logo
+      | TRACEROUTE
+    .meny
+      h2 Traceroute
+      ul
+        li
+          a(href="/") Home
+        li
+          a(href="#/map") Map
+        li
+          a(href="#/details") Details
+    .meny-arrow
+    .contents(ng-view)

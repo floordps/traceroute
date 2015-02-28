@@ -1,0 +1,7 @@
+.container-fluid
+  .row-fluid
+    form#tr.input-group.col-sm-4.col-md-4.col-xs-6.centering
+      input#url.form-control(type='text', placeholder='URL or IP Address', ng-model='url')
+      span.input-group-btn
+        button#btn.btn-primary.btn(ng-click='startTrace()', ladda='load', data-style='slide-left' href='#/map') Trace
+include ../includes/_footer.jade
