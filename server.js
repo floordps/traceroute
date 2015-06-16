@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var server = app.listen(80);
+var server = app.listen(process.env.PORT || 5000);
 var bodyParser = require('body-parser');
 var tr = require('traceroute');
 

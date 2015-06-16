@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "scripts": {
+    "postinstall": "node node_modules/bower/bin/bower install"
+  },
   "dependencies": {
     "body-parser": "^1.11.0",
     "bower": "^1.4.1",
     "express": "^4.11.2",
     "jade": "^1.9.1",
     "traceroute": "^0.0.3"
-  },
-  "scripts": {
-    "postinstall": "node node_modules/bower/bin/bower install"
   },
   "engines": {
     "node": "0.10.33"
