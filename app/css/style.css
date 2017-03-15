@@ -143,3 +143,6 @@ option {
   position: fixed;
   z-index: -1;
 }
+.detailed-table {
+  text-align: center;
+}

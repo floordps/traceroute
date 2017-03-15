@@ -24,7 +24,7 @@ app.service('traceService', function($http, $q) {
           }
           ip.map(function(obj, i, arr) {
             if(obj === false) return;
-            $http.get('http://freegeoip.net/json/' + obj.ip)
+            $http.get('//freegeoip.net/json/' + obj.ip)
               .success(function (data) {
                 data.rtt = ip[i].rtt;
                 ip[i] = data;

@@ -2,11 +2,6 @@ include ../includes/_header.jade
 #pac-input.container.controls.col-md-4.col-sm-4.col-xs-4.col-lg-4
   .row
     form.input-group(ng-submit='startTrace()')
-      span.input-group-btn
-        select.btn.btn-info
-          option 1
-          option 2
-          option 3
       input.form-control(type="text", ladda='load', placeholder="URL or IP Address" ng-model="url")
       span.input-group-btn
         button.btn.btn-primary(data-style='slide-left', ladda='load') Trace

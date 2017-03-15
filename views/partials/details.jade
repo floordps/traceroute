@@ -2,14 +2,14 @@ include ../includes/_header.jade
 .panel.panel-default
   .panel-heading 
     h4 Traceroute Details
-  table.table
+  table.table.table-responsive.table-striped.detailed-table
     thead
       tr
         td #
-        td IP Address
-        td Round Trip Time
-        td Latitude
-        td Longitude
+        td IP
+        td RTT
+        td Lat.
+        td Lng.
     tr(ng-repeat="route in routes track by $index")
       td(ng-if='route') {{$index + 1}}
       td(ng-if='route') {{route.ip}}

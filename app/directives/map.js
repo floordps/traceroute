@@ -41,7 +41,7 @@ app.directive('map', function($timeout, traceService) {
           var tmp = i + 1;
           marker = new google.maps.Marker({
             position: new google.maps.LatLng(data[i].latitude, data[i].longitude),
-            icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=' + tmp + '|FE6256|000000',
+            icon: '//chart.apis.google.com/chart?chst=d_map_pin_letter&chld=' + tmp + '|FE6256|000000',
             visible: true,
             map: map
           });
